@@ -1,0 +1,21 @@
+.App {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 20%;
+  
+  
+}
+.AllergyContainer {
+ width: 200px;
+  
+}
+.CalorieContainer {
+  width: 200px;
+
+  
+}
+.DietContainer {
+  width: 200px;
+  
+}

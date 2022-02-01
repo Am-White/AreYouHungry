@@ -1,8 +1,8 @@
-import React from "react"
-import Meal from "./Meal"
+import React from "react";
+import Meal from "./Meal";
 
 export default function MealList({ mealData }) {
-  const nutrients = mealData.nutrients
+  const nutrients = mealData.nutrients;
 
   return (
     <main>
@@ -13,14 +13,16 @@ export default function MealList({ mealData }) {
           <li>Carbohydrates: {nutrients.carbohydrates.toFixed(0)}</li>
           <li>Fat: {nutrients.fat.toFixed(0)}</li>
           <li>Protein: {nutrients.protein.toFixed(0)}</li>
+          <li>Sugar: !!! </li>
         </ul>
       </section>
 
       <section className="meals">
-        {mealData.meals.map(meal => {
-          return <Meal key={meal.id} meal={meal} />
+        {mealData.meals.map((meal) => {
+          return <Meal key={meal.id} meal={meal} />;
         })}
       </section>
     </main>
-  )
+  );
 }
+
